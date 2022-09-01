@@ -32,7 +32,7 @@ public class Wetterdaten extends Subject<Wetterdaten> {
 
     @Override
     public void notifyObservers(Wetterdaten info) {
-        for(Observer observer : this.getObservers()) {
+        for(Observer<Wetterdaten> observer : this.getObservers()) {
             observer.update(info);
         }
     }

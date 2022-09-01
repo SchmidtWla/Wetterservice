@@ -1,6 +1,6 @@
 package wetterdaten;
 
-public interface Observer<T extends Subject> {
+public interface Observer<T> {
 
     public void update(T info);
 
